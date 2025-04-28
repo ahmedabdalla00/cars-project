@@ -8,7 +8,7 @@ st.set_page_config(page_title="Cars Dashboard 🚗", layout="wide")
 
 @st.cache_data
 def read():
-    return pd.read_csv(r"../car_price\datasets\EDa.csv")
+    return pd.read_csv(r"../cars-project/tree/master/datasets\EDa.csv")
 
 # 🧠 New: Cache the scatter figure creation
 @st.cache_data
