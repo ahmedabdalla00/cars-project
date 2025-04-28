@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="model 🚗", layout="wide")
 @st.cache_data
 def read():
-    return pd.read_csv(r"D:\machine_learinig\car_price\datasets\EDa.csv")
+    return pd.read_csv(r"../car_price\datasets\EDa.csv")
 
 df = read()
 
@@ -14,11 +14,11 @@ df = read()
 st.title("Cars Price Prediction Model 🚗")
 
 # --- Correct way to load the model ---
-with open(r'D:\machine_learinig\car_price\data\model.pkl', 'rb') as f:
+with open(r'../car_price\data\model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Directory containing all encoder files
-encoder_dir = r'D:\machine_learinig\car_price\data'
+encoder_dir = r'../car_price\data'
 
 # Dictionary to store encoders
 encoders = {}
